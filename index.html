@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="">
+            <h1 style="padding-top: 15px"> Create Account</h1>
+            <input type="text" name="fname" placeholder="Full Name" id="fname">
+            <input type="text" name="email" placeholder="Email" id="email">
+            <input type="password" name="password" placeholder="Password" id="pass">
+            <input type="password" name="Confirm password" placeholder="Password" id="rpass">
+            <input type="text" name="phone" placeholder="Phone Number" id="phone">
+            <button style="margin-top:10px" onclick="register()"> Create Account</button>
+            <h5>Already have an account! <a class="ghost" id="signIn" style="color:blue;"><u>Sign In</u></a></h5>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1 style="padding-bottom: 15px"> Login </h1>
+            <input type="email" name="email" id="lemail" placeholder="Email">
+            <input type="password" name="password" id="lpass" placeholder="Password">
+            <a href="you-forgot-your-hyec25.jpg" style="padding-left:150px; font-weight: bold"> Forgot Your Password?</a>
+            <button style="margin-top: 10px" onclick="login()" > Let Me In...</button>
+            <h5>Create Account <a class="ghost" id="signUp" style="color:blue;"><u>Sign Up</u></a></h5>
+        </form>
+        
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <img src="signup.svg" alt="movie-1" height="480" width="500"/>
+                
+            </div>
+            <div class="overlay-panel overlay-right">
+                <img src="login.svg" alt="movie-2" height="480" width="500"/>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="script.js"></script>  
+
+</body>
+</html>
